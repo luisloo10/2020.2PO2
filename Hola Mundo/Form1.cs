@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace Hola_Mundo
 {
+
     public partial class Form1 : Form
     {
         public Form1()
@@ -26,5 +27,17 @@ namespace Hola_Mundo
         {
             MessageBox.Show("Hola Mundo!");
         }
+    }
+
+    public class Automovil
+    {
+        public int llantas;
+        public string color;
+        public int puertas;
+        public int year;
+        public string marca;
+        public string modelo;
+        public int cc;
+        public string transmision;
     }
 }
