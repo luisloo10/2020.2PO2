@@ -27,6 +27,11 @@ namespace Hola_Mundo
         {
             MessageBox.Show("Hola Mundo!");
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 
     public class Automovil

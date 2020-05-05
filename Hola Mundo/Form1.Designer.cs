@@ -36,6 +36,7 @@
             this.Llantas = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Color = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Puertas = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Año = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bAgregar = new System.Windows.Forms.Button();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
@@ -52,7 +53,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.Año = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Marca = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -111,11 +112,13 @@
             this.Llantas,
             this.Color,
             this.Puertas,
-            this.Año});
-            this.dataGridView1.Location = new System.Drawing.Point(258, 31);
+            this.Año,
+            this.Marca});
+            this.dataGridView1.Location = new System.Drawing.Point(252, 31);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(473, 199);
+            this.dataGridView1.Size = new System.Drawing.Size(496, 199);
             this.dataGridView1.TabIndex = 4;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // ID
             // 
@@ -136,6 +139,11 @@
             // 
             this.Puertas.HeaderText = "Puertas";
             this.Puertas.Name = "Puertas";
+            // 
+            // Año
+            // 
+            this.Año.HeaderText = "Año";
+            this.Año.Name = "Año";
             // 
             // bAgregar
             // 
@@ -265,16 +273,16 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Color";
             // 
-            // Año
+            // Marca
             // 
-            this.Año.HeaderText = "Año";
-            this.Año.Name = "Año";
+            this.Marca.HeaderText = "Marca";
+            this.Marca.Name = "Marca";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 381);
+            this.ClientSize = new System.Drawing.Size(805, 381);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.bHola);
             this.Name = "Form1";
@@ -315,6 +323,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Puertas;
         private System.Windows.Forms.DataGridViewTextBoxColumn Año;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Marca;
     }
 }
 
