@@ -56,6 +56,7 @@
             this.Marca = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TxtModelo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cilindraje = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Transmision = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -117,7 +118,8 @@
             this.Año,
             this.Marca,
             this.TxtModelo,
-            this.Cilindraje});
+            this.Cilindraje,
+            this.Transmision});
             this.dataGridView1.Location = new System.Drawing.Point(287, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(586, 257);
@@ -292,6 +294,11 @@
             this.Cilindraje.HeaderText = "Cilindraje";
             this.Cilindraje.Name = "Cilindraje";
             // 
+            // Transmision
+            // 
+            this.Transmision.HeaderText = "Transmision";
+            this.Transmision.Name = "Transmision";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -340,6 +347,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Marca;
         private System.Windows.Forms.DataGridViewTextBoxColumn TxtModelo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cilindraje;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Transmision;
     }
 }
 
