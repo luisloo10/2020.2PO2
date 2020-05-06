@@ -32,6 +32,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Llantas = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Color = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Puertas = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Año = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Marca = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TxtModelo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cilindraje = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Transmision = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bAgregar = new System.Windows.Forms.Button();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
@@ -48,15 +57,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Llantas = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Color = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Puertas = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Año = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Marca = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TxtModelo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cilindraje = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Transmision = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -120,11 +120,56 @@
             this.TxtModelo,
             this.Cilindraje,
             this.Transmision});
-            this.dataGridView1.Location = new System.Drawing.Point(287, 0);
+            this.dataGridView1.Location = new System.Drawing.Point(206, 19);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(586, 257);
             this.dataGridView1.TabIndex = 4;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // ID
+            // 
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            // 
+            // Llantas
+            // 
+            this.Llantas.HeaderText = "Llantas";
+            this.Llantas.Name = "Llantas";
+            // 
+            // Color
+            // 
+            this.Color.HeaderText = "Color";
+            this.Color.Name = "Color";
+            // 
+            // Puertas
+            // 
+            this.Puertas.HeaderText = "Puertas";
+            this.Puertas.Name = "Puertas";
+            // 
+            // Año
+            // 
+            this.Año.HeaderText = "Año";
+            this.Año.Name = "Año";
+            // 
+            // Marca
+            // 
+            this.Marca.HeaderText = "Marca";
+            this.Marca.Name = "Marca";
+            // 
+            // TxtModelo
+            // 
+            this.TxtModelo.HeaderText = "Modelo";
+            this.TxtModelo.Name = "TxtModelo";
+            // 
+            // Cilindraje
+            // 
+            this.Cilindraje.HeaderText = "Cilindraje";
+            this.Cilindraje.Name = "Cilindraje";
+            // 
+            // Transmision
+            // 
+            this.Transmision.HeaderText = "Transmision";
+            this.Transmision.Name = "Transmision";
             // 
             // bAgregar
             // 
@@ -254,56 +299,11 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Color";
             // 
-            // ID
-            // 
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            // 
-            // Llantas
-            // 
-            this.Llantas.HeaderText = "Llantas";
-            this.Llantas.Name = "Llantas";
-            // 
-            // Color
-            // 
-            this.Color.HeaderText = "Color";
-            this.Color.Name = "Color";
-            // 
-            // Puertas
-            // 
-            this.Puertas.HeaderText = "Puertas";
-            this.Puertas.Name = "Puertas";
-            // 
-            // Año
-            // 
-            this.Año.HeaderText = "Año";
-            this.Año.Name = "Año";
-            // 
-            // Marca
-            // 
-            this.Marca.HeaderText = "Marca";
-            this.Marca.Name = "Marca";
-            // 
-            // TxtModelo
-            // 
-            this.TxtModelo.HeaderText = "Modelo";
-            this.TxtModelo.Name = "TxtModelo";
-            // 
-            // Cilindraje
-            // 
-            this.Cilindraje.HeaderText = "Cilindraje";
-            this.Cilindraje.Name = "Cilindraje";
-            // 
-            // Transmision
-            // 
-            this.Transmision.HeaderText = "Transmision";
-            this.Transmision.Name = "Transmision";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(947, 381);
+            this.ClientSize = new System.Drawing.Size(914, 381);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.bHola);
             this.Name = "Form1";
