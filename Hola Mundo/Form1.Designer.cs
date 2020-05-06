@@ -31,7 +31,7 @@
             this.bHola = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.gDatos = new System.Windows.Forms.DataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Llantas = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Color = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,14 +42,13 @@
             this.Cilindraje = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Transmision = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bAgregar = new System.Windows.Forms.Button();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tTransmision = new System.Windows.Forms.TextBox();
+            this.tCilindraje = new System.Windows.Forms.TextBox();
+            this.tModelo = new System.Windows.Forms.TextBox();
+            this.tMarca = new System.Windows.Forms.TextBox();
+            this.tAño = new System.Windows.Forms.TextBox();
+            this.tPuertas = new System.Windows.Forms.TextBox();
+            this.tColor = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -57,8 +56,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.tLlantas = new System.Windows.Forms.NumericUpDown();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gDatos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tLlantas)).BeginInit();
             this.SuspendLayout();
             // 
             // bHola
@@ -82,16 +84,16 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Controls.Add(this.tLlantas);
+            this.groupBox1.Controls.Add(this.gDatos);
             this.groupBox1.Controls.Add(this.bAgregar);
-            this.groupBox1.Controls.Add(this.textBox8);
-            this.groupBox1.Controls.Add(this.textBox7);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.tTransmision);
+            this.groupBox1.Controls.Add(this.tCilindraje);
+            this.groupBox1.Controls.Add(this.tModelo);
+            this.groupBox1.Controls.Add(this.tMarca);
+            this.groupBox1.Controls.Add(this.tAño);
+            this.groupBox1.Controls.Add(this.tPuertas);
+            this.groupBox1.Controls.Add(this.tColor);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
@@ -107,10 +109,10 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Automóvil";
             // 
-            // dataGridView1
+            // gDatos
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.gDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gDatos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
             this.Llantas,
             this.Color,
@@ -120,11 +122,11 @@
             this.TxtModelo,
             this.Cilindraje,
             this.Transmision});
-            this.dataGridView1.Location = new System.Drawing.Point(206, 19);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(586, 257);
-            this.dataGridView1.TabIndex = 4;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.gDatos.Location = new System.Drawing.Point(206, 19);
+            this.gDatos.Name = "gDatos";
+            this.gDatos.Size = new System.Drawing.Size(586, 257);
+            this.gDatos.TabIndex = 0;
+            this.gDatos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // ID
             // 
@@ -176,65 +178,59 @@
             this.bAgregar.Location = new System.Drawing.Point(85, 236);
             this.bAgregar.Name = "bAgregar";
             this.bAgregar.Size = new System.Drawing.Size(99, 36);
-            this.bAgregar.TabIndex = 3;
+            this.bAgregar.TabIndex = 8;
             this.bAgregar.Text = "Agregar";
             this.bAgregar.UseVisualStyleBackColor = true;
+            this.bAgregar.Click += new System.EventHandler(this.bAgregar_Click);
             // 
-            // textBox8
+            // tTransmision
             // 
-            this.textBox8.Location = new System.Drawing.Point(85, 210);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 2;
+            this.tTransmision.Location = new System.Drawing.Point(85, 210);
+            this.tTransmision.Name = "tTransmision";
+            this.tTransmision.Size = new System.Drawing.Size(100, 20);
+            this.tTransmision.TabIndex = 7;
             // 
-            // textBox7
+            // tCilindraje
             // 
-            this.textBox7.Location = new System.Drawing.Point(85, 184);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 2;
+            this.tCilindraje.Location = new System.Drawing.Point(85, 184);
+            this.tCilindraje.Name = "tCilindraje";
+            this.tCilindraje.Size = new System.Drawing.Size(100, 20);
+            this.tCilindraje.TabIndex = 6;
             // 
-            // textBox6
+            // tModelo
             // 
-            this.textBox6.Location = new System.Drawing.Point(85, 158);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 2;
+            this.tModelo.Location = new System.Drawing.Point(85, 158);
+            this.tModelo.Name = "tModelo";
+            this.tModelo.Size = new System.Drawing.Size(100, 20);
+            this.tModelo.TabIndex = 5;
             // 
-            // textBox5
+            // tMarca
             // 
-            this.textBox5.Location = new System.Drawing.Point(85, 132);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 2;
+            this.tMarca.Location = new System.Drawing.Point(85, 132);
+            this.tMarca.Name = "tMarca";
+            this.tMarca.Size = new System.Drawing.Size(100, 20);
+            this.tMarca.TabIndex = 4;
             // 
-            // textBox4
+            // tAño
             // 
-            this.textBox4.Location = new System.Drawing.Point(85, 106);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 2;
+            this.tAño.Location = new System.Drawing.Point(85, 106);
+            this.tAño.Name = "tAño";
+            this.tAño.Size = new System.Drawing.Size(100, 20);
+            this.tAño.TabIndex = 3;
             // 
-            // textBox3
+            // tPuertas
             // 
-            this.textBox3.Location = new System.Drawing.Point(85, 80);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 2;
+            this.tPuertas.Location = new System.Drawing.Point(85, 80);
+            this.tPuertas.Name = "tPuertas";
+            this.tPuertas.Size = new System.Drawing.Size(100, 20);
+            this.tPuertas.TabIndex = 2;
             // 
-            // textBox2
+            // tColor
             // 
-            this.textBox2.Location = new System.Drawing.Point(85, 54);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 2;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(85, 28);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 2;
+            this.tColor.Location = new System.Drawing.Point(85, 54);
+            this.tColor.Name = "tColor";
+            this.tColor.Size = new System.Drawing.Size(100, 20);
+            this.tColor.TabIndex = 1;
             // 
             // label8
             // 
@@ -299,11 +295,28 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Color";
             // 
+            // tLlantas
+            // 
+            this.tLlantas.Location = new System.Drawing.Point(85, 29);
+            this.tLlantas.Name = "tLlantas";
+            this.tLlantas.Size = new System.Drawing.Size(43, 20);
+            this.tLlantas.TabIndex = 3;
+            // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Location = new System.Drawing.Point(97, 27);
+            this.maskedTextBox1.Mask = "0000";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(100, 20);
+            this.maskedTextBox1.TabIndex = 3;
+            this.maskedTextBox1.ValidatingType = typeof(int);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(914, 381);
+            this.ClientSize = new System.Drawing.Size(914, 409);
+            this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.bHola);
             this.Name = "Form1";
@@ -312,8 +325,10 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gDatos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tLlantas)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -322,16 +337,15 @@
         private System.Windows.Forms.Button bHola;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView gDatos;
         private System.Windows.Forms.Button bAgregar;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tTransmision;
+        private System.Windows.Forms.TextBox tCilindraje;
+        private System.Windows.Forms.TextBox tModelo;
+        private System.Windows.Forms.TextBox tMarca;
+        private System.Windows.Forms.TextBox tAño;
+        private System.Windows.Forms.TextBox tPuertas;
+        private System.Windows.Forms.TextBox tColor;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
@@ -348,6 +362,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn TxtModelo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cilindraje;
         private System.Windows.Forms.DataGridViewTextBoxColumn Transmision;
+        private System.Windows.Forms.NumericUpDown tLlantas;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
     }
 }
 

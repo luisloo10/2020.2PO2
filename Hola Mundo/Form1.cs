@@ -13,6 +13,8 @@ namespace Hola_Mundo
 
     public partial class Form1 : Form
     {
+        Automovil Auto;
+
         public Form1()
         {
             InitializeComponent();
@@ -20,7 +22,7 @@ namespace Hola_Mundo
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            tLlantas.Focus();
         }
 
         private void bHola_Click(object sender, EventArgs e)
@@ -32,17 +34,33 @@ namespace Hola_Mundo
         {
 
         }
-    }
 
-    public class Automovil
-    {
-        public int llantas;
-        public string color;
-        public int puertas;
-        public int year;
-        public string marca;
-        public string modelo;
-        public int cc;
-        public string transmision;
+        private void bAgregar_Click(object sender, EventArgs e)
+        {
+            try 
+            {
+                Auto = new Automovil(Convert.ToInt16(tLlantas.Value), tColor.Text, Convert.ToInt16(tPuertas.Text),
+                                Convert.ToInt16(tAño.Text), tMarca.Text, tModelo.Text, Convert.ToInt16(tCilindraje.Text),tTransmision.Text);
+
+                gDatos.Rows.Add(gDatos.Rows.Count, Auto.Llantas, Auto.Color, Auto.Puertas, Auto.Year, Auto.Marca, Auto.Modelo, Auto.Cilindraje, Auto.Transmision);
+                Limpiar();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void Limpiar()
+        {
+            tLlantas.Value = 0;
+            tColor.Clear();
+            tPuertas.Clear();
+            tAño.Clear();
+            tMarca.Clear();
+            tModelo.Clear();
+            tCilindraje.Clear();
+            tTransmision.Clear();
+        }
     }
 }
