@@ -55,6 +55,7 @@
             this.Año = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Marca = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TxtModelo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cilindraje = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -115,10 +116,11 @@
             this.Puertas,
             this.Año,
             this.Marca,
-            this.TxtModelo});
-            this.dataGridView1.Location = new System.Drawing.Point(252, 31);
+            this.TxtModelo,
+            this.Cilindraje});
+            this.dataGridView1.Location = new System.Drawing.Point(287, 0);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(535, 199);
+            this.dataGridView1.Size = new System.Drawing.Size(586, 257);
             this.dataGridView1.TabIndex = 4;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -285,11 +287,16 @@
             this.TxtModelo.HeaderText = "Modelo";
             this.TxtModelo.Name = "TxtModelo";
             // 
+            // Cilindraje
+            // 
+            this.Cilindraje.HeaderText = "Cilindraje";
+            this.Cilindraje.Name = "Cilindraje";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(840, 381);
+            this.ClientSize = new System.Drawing.Size(947, 381);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.bHola);
             this.Name = "Form1";
@@ -332,6 +339,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Año;
         private System.Windows.Forms.DataGridViewTextBoxColumn Marca;
         private System.Windows.Forms.DataGridViewTextBoxColumn TxtModelo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cilindraje;
     }
 }
 
