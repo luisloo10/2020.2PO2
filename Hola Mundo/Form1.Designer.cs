@@ -58,6 +58,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tLlantas = new System.Windows.Forms.NumericUpDown();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.bOperaciones = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gDatos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tLlantas)).BeginInit();
@@ -311,11 +312,22 @@
             this.maskedTextBox1.TabIndex = 3;
             this.maskedTextBox1.ValidatingType = typeof(int);
             // 
+            // bOperaciones
+            // 
+            this.bOperaciones.Location = new System.Drawing.Point(218, 16);
+            this.bOperaciones.Name = "bOperaciones";
+            this.bOperaciones.Size = new System.Drawing.Size(92, 40);
+            this.bOperaciones.TabIndex = 4;
+            this.bOperaciones.Text = "Abrir Operaciones";
+            this.bOperaciones.UseVisualStyleBackColor = true;
+            this.bOperaciones.Click += new System.EventHandler(this.bOperaciones_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(914, 409);
+            this.Controls.Add(this.bOperaciones);
             this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.bHola);
@@ -364,6 +376,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Transmision;
         private System.Windows.Forms.NumericUpDown tLlantas;
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.Button bOperaciones;
     }
 }
 

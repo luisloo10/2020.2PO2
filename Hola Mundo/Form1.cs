@@ -62,5 +62,17 @@ namespace Hola_Mundo
             tCilindraje.Clear();
             tTransmision.Clear();
         }
+
+        private void bOperaciones_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                fOperaciones F = new fOperaciones();
+                F.ShowDialog();
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

@@ -20,9 +20,7 @@ namespace Hola_Mundo
 
         private void fOperaciones_Load(object sender, EventArgs e)
         {
-            Operaciones Op = new Operaciones();
-            Suma Sm = new Suma();
-            
+
         }
     }
 }
