@@ -63,7 +63,7 @@
             this.bCalcular.TabIndex = 3;
             this.bCalcular.Text = "Calcular";
             this.bCalcular.UseVisualStyleBackColor = true;
-            this.bCalcular.Click += new System.EventHandler(this.bCalcular_Click);
+            //this.bCalcular.Click += new System.EventHandler(this.bCalcular_Click);
             // 
             // fOperaciones
             // 

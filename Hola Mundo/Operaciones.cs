@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Hola_Mundo;
 
+
 //Ejercicios
 //1: Crear una clase llamada Suma y agregar una funcion llamada Operar que asigne a la variable 'resultado' la suma de valor1 y valor2
 //2: Crear una clase llamada Resta y agregar una funcion llamada Operar que asigne a la variable 'resultado' la resta de valor1 y valor2
