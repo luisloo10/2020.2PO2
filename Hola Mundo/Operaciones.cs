@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Configuration;
 
 
 //Ejercicios
@@ -11,7 +10,7 @@ using System.Configuration;
 //2: Crear una clase llamada Resta y agregar una funcion llamada Operar que asigne a la variable 'resultado' la resta de valor1 y valor2
 //3: Crear una clase llamada Multiplicacion y agregar una funcion llamada Operar que asigne a la variable 'resultado' la multiplicacion de valor1 y valor2
 //4: Crear una clase llamada Division y agregar una funcion llamada Operar que asigne a la variable 'resultado' la division de valor1 y valor2
-//5: Cear una clase llamada Potencia y agregar una funcion llamada Operar que asigne a la variable 'resultado' el resultado de valor1 elevado a la potencia valor2.
+//5: Crear una clase llamada Potencia y agregar una funcion llamada Operar que asigne a la variable 'resultado' el resultado de valor1 elevado a la potencia valor2.
 //6: Crear una clase llamada Sumax5 y agregar una funcion llamada Operar que asigne a la variable 'resultado' la suma de valor1 y valor2 multiplicada por 5
 //7: Crear una clase llamada DobleMultiplicacion y agregar una funcion llamada Operar que asigne a la variable 'resultado' la doble multiplicacion de valor1 y valor2
 
@@ -59,7 +58,13 @@ namespace Hola_Mundo
                 return resultado;
             }
         }
+        
+        
+
     }
+    
+    
+        
+
+    
 }
-
-
