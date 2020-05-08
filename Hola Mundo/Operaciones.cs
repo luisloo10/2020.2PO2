@@ -34,6 +34,7 @@ namespace Hola_Mundo
             }
         }
 
+        
         public int Valor2
         {
             set
@@ -56,6 +57,15 @@ namespace Hola_Mundo
             {
                 return resultado;
             }
+
         }
+        
+        
+
     }
+    
+    
+        
+
+    
 }
