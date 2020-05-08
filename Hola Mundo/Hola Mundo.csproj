@@ -60,9 +60,11 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Operaciones.cs" />
-    <Compile Include="Potencia.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resta.cs" />
+    <Compile Include="suma.cs" />
+    <Compile Include="Sumax5.cs" />
     <EmbeddedResource Include="fOperaciones.resx">
       <DependentUpon>fOperaciones.cs</DependentUpon>
     </EmbeddedResource>

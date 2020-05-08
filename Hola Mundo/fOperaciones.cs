@@ -12,6 +12,7 @@ namespace Hola_Mundo
 {
     public partial class fOperaciones : Form
     {
+        Sumax5 SumPor5;
 
         public fOperaciones()
         {
@@ -23,6 +24,16 @@ namespace Hola_Mundo
 
         }
 
-        
+        private void bCalcular_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

@@ -31,6 +31,7 @@
             this.bHola = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tLlantas = new System.Windows.Forms.NumericUpDown();
             this.gDatos = new System.Windows.Forms.DataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Llantas = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,12 +57,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.tLlantas = new System.Windows.Forms.NumericUpDown();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.bOperaciones = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gDatos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tLlantas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gDatos)).BeginInit();
             this.SuspendLayout();
             // 
             // bHola
@@ -103,12 +103,19 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 70);
+            this.groupBox1.Location = new System.Drawing.Point(12, 79);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(808, 299);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Automóvil";
+            // 
+            // tLlantas
+            // 
+            this.tLlantas.Location = new System.Drawing.Point(85, 29);
+            this.tLlantas.Name = "tLlantas";
+            this.tLlantas.Size = new System.Drawing.Size(43, 20);
+            this.tLlantas.TabIndex = 3;
             // 
             // gDatos
             // 
@@ -123,7 +130,7 @@
             this.TxtModelo,
             this.Cilindraje,
             this.Transmision});
-            this.gDatos.Location = new System.Drawing.Point(206, 19);
+            this.gDatos.Location = new System.Drawing.Point(206, 15);
             this.gDatos.Name = "gDatos";
             this.gDatos.Size = new System.Drawing.Size(586, 257);
             this.gDatos.TabIndex = 0;
@@ -296,13 +303,6 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Color";
             // 
-            // tLlantas
-            // 
-            this.tLlantas.Location = new System.Drawing.Point(85, 29);
-            this.tLlantas.Name = "tLlantas";
-            this.tLlantas.Size = new System.Drawing.Size(43, 20);
-            this.tLlantas.TabIndex = 3;
-            // 
             // maskedTextBox1
             // 
             this.maskedTextBox1.Location = new System.Drawing.Point(97, 27);
@@ -337,8 +337,8 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gDatos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tLlantas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gDatos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
