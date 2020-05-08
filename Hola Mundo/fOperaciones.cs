@@ -12,8 +12,6 @@ namespace Hola_Mundo
 {
     public partial class fOperaciones : Form
     {
-        Sumax5 SumPor5;
-
         public fOperaciones()
         {
             InitializeComponent();
