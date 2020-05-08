@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Configuration;
+
 
 //Ejercicios
 //1: Crear una clase llamada Suma y agregar una funcion llamada Operar que asigne a la variable 'resultado' la suma de valor1 y valor2
@@ -16,7 +18,7 @@ using System.Threading.Tasks;
 //Al terminar su ejercicio, subir el cambio al repositorio
 namespace Hola_Mundo
 {
-    public class Operaciones
+    class Operaciones
     {
         protected int valor1;
         protected int valor2;
@@ -34,7 +36,6 @@ namespace Hola_Mundo
             }
         }
 
-        
         public int Valor2
         {
             set
@@ -57,15 +58,8 @@ namespace Hola_Mundo
             {
                 return resultado;
             }
-
         }
-        
-        
-
     }
-    
-    
-        
-
-    
 }
+
+
