@@ -10,7 +10,7 @@ namespace Hola_Mundo
 
     {
 
-        int operar()
+        int OPERAR()
             {
             return resultado = valor1 / valor2;
             }
