@@ -13,9 +13,6 @@ namespace Hola_Mundo
             protected set
             {
                 double resultado;
-
-
-
                 resultado = Math.Pow(valor1, Valor2);
             }
             get
