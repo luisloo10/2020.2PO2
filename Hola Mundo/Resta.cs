@@ -8,17 +8,9 @@ namespace Hola_Mundo
 {
     class Resta : Operaciones
     {
-        public int Operar
+        public int Operar()
         {
-            protected set
-            {
-
-                resultado = valor1 - valor2;
-            }
-            get
-            {
-                return resultado;
-            }
+            return valor1 - valor2;
         }
 
     }

@@ -8,19 +8,10 @@ namespace Hola_Mundo
 {
     class Potencia : Operaciones
     {
-        public int Operar
+        public void Operar()
         {
-            protected set
-            {
-                Resultado = Convert.ToInt16(Math.Pow(Valor1, Valor2));
-            }
-            get
-            {
-                return Convert.ToInt16(Math.Pow(Valor1, Valor2));
-            }
+            Resultado = Convert.ToInt16(Math.Pow(Valor1, Valor2));
         }
-
-
     }
 
 }

@@ -7,12 +7,17 @@ using System.Threading.Tasks;
 namespace Hola_Mundo
 {
     class division : Operaciones
-
     {
-
-        int OPERAR()
+        public int Operar()
+        {
+            if(valor2==0)
             {
-            return resultado = valor1 / valor2;
+                return 0;
             }
+            else
+            {
+                return resultado = valor1 / valor2;
+            }
+        }
     }
 }

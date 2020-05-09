@@ -23,7 +23,6 @@ namespace Hola_Mundo
         protected int valor1;
         protected int valor2;
         protected int resultado;
-
         public int Valor1
         {
             set
