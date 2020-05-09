@@ -12,15 +12,12 @@ namespace Hola_Mundo
         {
             protected set
             {
-                double resultado;
-                resultado = Math.Pow(valor1, Valor2);
+                Resultado = Convert.ToInt16(Math.Pow(Valor1, Valor2));
             }
             get
             {
-                return resultado;
+                return Convert.ToInt16(Math.Pow(Valor1, Valor2));
             }
-
-
         }
 
 
