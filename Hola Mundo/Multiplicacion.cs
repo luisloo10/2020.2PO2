@@ -13,6 +13,7 @@ namespace Hola_Mundo
             protected set
             {
                 resultado = valor1 * valor2;
+            
             }
             get
             {
