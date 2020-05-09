@@ -8,7 +8,7 @@ namespace Hola_Mundo
 {
     class Suma : Operaciones
     {
-        int operar()
+       public int Operar()
         {
             return resultado = valor1 + valor2;
         }
