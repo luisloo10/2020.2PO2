@@ -59,6 +59,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Multiplicacion.cs" />
     <Compile Include="Operaciones.cs" />
     <Compile Include="Potencia.cs" />
     <Compile Include="Program.cs" />
