@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ahorcado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ahorcado.Designer.cs">
+      <DependentUpon>Ahorcado.cs</DependentUpon>
+    </Compile>
     <Compile Include="Automovil.cs" />
     <Compile Include="division.cs" />
     <Compile Include="fOperaciones.cs">
@@ -68,6 +74,9 @@
     <Compile Include="Resta.cs" />
     <Compile Include="Suma.cs" />
     <Compile Include="Sumax5.cs" />
+    <EmbeddedResource Include="Ahorcado.resx">
+      <DependentUpon>Ahorcado.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fOperaciones.resx">
       <DependentUpon>fOperaciones.cs</DependentUpon>
     </EmbeddedResource>
