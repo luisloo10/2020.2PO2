@@ -74,6 +74,12 @@
     <Compile Include="Resta.cs" />
     <Compile Include="Suma.cs" />
     <Compile Include="Sumax5.cs" />
+    <Compile Include="X0.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X0.Designer.cs">
+      <DependentUpon>X0.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Ahorcado.resx">
       <DependentUpon>Ahorcado.cs</DependentUpon>
     </EmbeddedResource>
@@ -92,6 +98,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="X0.resx">
+      <DependentUpon>X0.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

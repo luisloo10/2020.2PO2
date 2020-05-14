@@ -16,7 +16,7 @@ namespace Hola_Mundo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Ahorcado());
+            Application.Run(new X0());
         }
     }
 }
