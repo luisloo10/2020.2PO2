@@ -53,6 +53,7 @@
       <DependentUpon>Ahorcado.cs</DependentUpon>
     </Compile>
     <Compile Include="Automovil.cs" />
+    <Compile Include="Calc.cs" />
     <Compile Include="Calculadora.cs">
       <SubType>Form</SubType>
     </Compile>

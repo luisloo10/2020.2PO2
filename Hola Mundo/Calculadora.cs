@@ -13,23 +13,12 @@ namespace Hola_Mundo
 {
     public partial class Calculadora : Form
     {
+        Calc C = new Calc();
         public Calculadora()
         {
             InitializeComponent();
         }
-
-        int Valor1, Valor2;
         
-        private void b1_Click(object sender, EventArgs e)
-        {
-            Valor1 = 1;
-        }
-
-        private void b2_Click(object sender, EventArgs e)
-        {
-            Valor2 = 2;
-        }
-
         private void Calculadora_Load(object sender, EventArgs e)
         {
             
@@ -40,9 +29,105 @@ namespace Hola_Mundo
             return Valor1 + Valor2;
         }
 
+        private void bSuma_Click(object sender, EventArgs e)
+        {
+            C.Operacion(1);
+        }
+
+        private void bResta_Click(object sender, EventArgs e)
+        {
+            C.Operacion(2);
+        }
+
+        private void bMultiplicacion_Click(object sender, EventArgs e)
+        {
+            C.Operacion(3);
+        }
+
+        private void bDivision_Click(object sender, EventArgs e)
+        {
+            C.Operacion(4);
+        }
+
+        private void bRetroceder_Click(object sender, EventArgs e)
+        {
+            if(tResultado.Text.Length>0)
+            {
+                tResultado.Text = tResultado.Text.Substring(0, tResultado.Text.Length - 1);
+            }
+        }
+
         private void bIgual_Click(object sender, EventArgs e)
         {
-            tResultado.Text = Suma(Valor1, Valor2).ToString();
+            if(tResultado.Text.Length > 0)
+            {
+                tResultado.Text = C.Result(Convert.ToDouble(tResultado.Text));
+            }
+        }
+
+        private void b1_Click(object sender, EventArgs e)
+        {
+            tResultado.Text = C.SetResult(tResultado.Text, 1);
+        }
+
+        private void b2_Click(object sender, EventArgs e)
+        {
+            tResultado.Text = C.SetResult(tResultado.Text, 2);
+        }
+
+        private void b3_Click(object sender, EventArgs e)
+        {
+            tResultado.Text = C.SetResult(tResultado.Text, 3);
+        }
+
+        private void b4_Click(object sender, EventArgs e)
+        {
+            tResultado.Text = C.SetResult(tResultado.Text, 4);
+        }
+
+        private void b5_Click(object sender, EventArgs e)
+        {
+            tResultado.Text = C.SetResult(tResultado.Text, 5);
+        }
+
+        private void b6_Click(object sender, EventArgs e)
+        {
+            tResultado.Text = C.SetResult(tResultado.Text, 6);
+        }
+
+        private void b7_Click(object sender, EventArgs e)
+        {
+            tResultado.Text = C.SetResult(tResultado.Text, 7);
+        }
+
+        private void b8_Click(object sender, EventArgs e)
+        {
+            tResultado.Text = C.SetResult(tResultado.Text, 8);
+        }
+
+        private void b9_Click(object sender, EventArgs e)
+        {
+            tResultado.Text = C.SetResult(tResultado.Text, 9);
+        }
+
+        private void b0_Click(object sender, EventArgs e)
+        {
+            tResultado.Text = C.SetResult(tResultado.Text, 0);
+        }
+
+        private void bCE_Click(object sender, EventArgs e)
+        {
+            tResultado.Text = C.Reset();
+        }
+
+        private void bC_Click(object sender, EventArgs e)
+        {
+            tResultado.Text = C.Reset();
+        }
+
+        private void bMasMenos_Click(object sender, EventArgs e)
+        {
+            tResultado.Text = C.ChangeSign(Convert.ToDouble(tResultado.Text));
         }
     }
 }
