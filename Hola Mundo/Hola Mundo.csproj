@@ -76,6 +76,12 @@
     <Compile Include="Multiplicacion.cs" />
     <Compile Include="Operaciones.cs" />
     <Compile Include="Potencia.cs" />
+    <Compile Include="Practica 2\TrafficCity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Practica 2\TrafficCity.Designer.cs">
+      <DependentUpon>TrafficCity.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resta.cs" />
@@ -99,6 +105,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Practica 2\TrafficCity.resx">
+      <DependentUpon>TrafficCity.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -107,6 +116,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="X0.resx">
       <DependentUpon>X0.cs</DependentUpon>
@@ -123,6 +133,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Practica 2\Lights\Green.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Practica 2\Lights\Red.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Practica 2\Lights\Yellow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Practica 2\Lights\White.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
