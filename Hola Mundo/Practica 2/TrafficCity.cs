@@ -7,11 +7,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Firebase.Database;
+using Firebase.Database.Query;
+
+using FireSharp.Config;
+using FireSharp.Interfaces;
+using FireSharp.Response;
+
 
 namespace Hola_Mundo.Practica_2
 {
+    
     public partial class TrafficCity : Form
     {
+        IFirebaseConfig config = new FirebaseConfig
+        {
+            AuthSecret = "eFZpfupJzOeui3fRoilpgCXnpDaPv4djfI5qa0it",
+            BasePath = "https://helloworld-f4153.firebaseio.com/"
+        };
+
         int Status = 0;
         Lights L;
 
@@ -21,12 +35,36 @@ namespace Hola_Mundo.Practica_2
             InitializeComponent();
         }
 
+        
+
         private void TrafficCity_Load(object sender, EventArgs e)
         {
             L = new Lights();
             TimeRed = 5;
             TimeYellow = 1;
             TimeGreen = 2;
+
+            IFirebaseClient client;
+
+            client = new FireSharp.FirebaseClient(config);
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //var firebase = new FirebaseClient("https://dinosaur-facts.firebaseio.com/");
+                var firebase = new FirebaseClient("https://console.firebase.google.com/proyecto/loo-express-1559099185634");
+
+                var Tr = firebase.Child("Traffic")
+                    .OrderByKey();
+                MessageBox.Show(Tr.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void Temporizador_Tick(object sender, EventArgs e)
