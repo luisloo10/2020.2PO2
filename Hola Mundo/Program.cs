@@ -18,7 +18,8 @@ namespace Hola_Mundo
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new X0());
             //Application.Run(new Calculadora());
-            Application.Run(new Practica_2.TrafficCity());
+            //Application.Run(new Practica_2.TrafficCity());
+            Application.Run(new SocketFiles.SocketForm());
         }
     }
 }
