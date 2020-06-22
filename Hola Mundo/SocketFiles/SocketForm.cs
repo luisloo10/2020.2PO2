@@ -63,5 +63,11 @@ namespace Hola_Mundo.SocketFiles
             //MessageBox.Show(pRaqueta1.Location.Y.ToString());
             MoverRaqueta(ref pRaqueta1, MousePosition.Y);
         }
+
+        private void bActivar_Click(object sender, EventArgs e)
+        {
+            Chat C = new Chat();
+            C.Show();
+        }
     }
 }

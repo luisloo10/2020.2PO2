@@ -111,13 +111,19 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resta.cs" />
-    <Compile Include="SocketFiles\SocketClass.cs" />
+    <Compile Include="SocketFiles\Chat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SocketFiles\Chat.Designer.cs">
+      <DependentUpon>Chat.cs</DependentUpon>
+    </Compile>
     <Compile Include="SocketFiles\SocketForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SocketFiles\SocketForm.Designer.cs">
       <DependentUpon>SocketForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SocketFiles\SocketServer.cs" />
     <Compile Include="Suma.cs" />
     <Compile Include="Sumax5.cs" />
     <Compile Include="X0.cs">
@@ -151,6 +157,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SocketFiles\Chat.resx">
+      <DependentUpon>Chat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SocketFiles\SocketForm.resx">
       <DependentUpon>SocketForm.cs</DependentUpon>
     </EmbeddedResource>
