@@ -19,7 +19,8 @@ namespace Hola_Mundo
             //Application.Run(new X0());
             //Application.Run(new Calculadora());
             //Application.Run(new Practica_2.TrafficCity());
-            Application.Run(new SocketFiles.SocketForm());
+            //Application.Run(new SocketFiles.SocketForm());
+            Application.Run(new GeoPreguntas.MainPreguntas());
         }
     }
 }
